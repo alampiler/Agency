@@ -196,6 +196,10 @@ margin: 0;
 			width: 40%;
 			margin-left: 20px;
 
+      video{
+        width: 100%;
+        height: 340px;
+      }
 		}
 	}
 
@@ -509,6 +513,20 @@ margin: 0;
 	}
 }
 
+@media screen and (min-width: $laptopL){
+  .main {
+    & .header_info {
+
+      & .header_video {
+        height: 24vw;
+
+        video{
+          height: 24vw;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: $laptop) {
 	.main {
@@ -528,6 +546,12 @@ margin: 0;
 			& .header_video {
 				width: 80%;
 				margin: 0 auto;
+        height: 44vw;
+
+        video{
+          width: 100%;
+          height: 44vw;
+        }
 			}
 		}
 

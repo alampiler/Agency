@@ -19,4 +19,23 @@ $(document).ready(function() {
     $('.ie').css('display', 'block');
   }
 
+
+  $("a[href*='#']").on("click", function(e){
+    let this_elem = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $(this_elem.attr('href')).offset().top
+    }, 777);
+    e.preventDefault();
+    return false;
+  });
+
+  $(".order").on("click", function(e){
+    let anchor = $("#presentation");
+    $('html, body').stop().animate({
+      scrollTop: $(anchor).offset().top
+    }, 777);
+    e.preventDefault();
+    return false;
+  });
+
 });
