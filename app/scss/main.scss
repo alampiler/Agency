@@ -21,6 +21,8 @@ body{
 	background: $background;
   overflow-x: hidden;
 	color: $titlesColor;
+	max-width: 1690px;
+	margin: 0 auto;
 }
 
 p{line-height: 1.6em}
@@ -42,6 +44,10 @@ textarea{
 	resize: none;
 
 	&:focus{outline: none}
+}
+
+button{
+	cursor: pointer;
 }
 
 .red_line{
@@ -356,6 +362,8 @@ margin: 0;
 										margin: 0 25px 0 0;
 										font-weight: bold;
 										font-style: italic;
+
+										a{color: $blackMain}
 									}
 								}
 							}

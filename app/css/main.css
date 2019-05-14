@@ -8,7 +8,9 @@ body {
   font: normal 16px 'OpenSans', sans-serif;
   background: #f6f2f2;
   overflow-x: hidden;
-  color: #333333; }
+  color: #333333;
+  max-width: 1690px;
+  margin: 0 auto; }
 
 p {
   line-height: 1.6em; }
@@ -33,6 +35,9 @@ textarea {
   input[type='email']:focus,
   textarea:focus {
     outline: none; }
+
+button {
+  cursor: pointer; }
 
 .red_line {
   height: 2px;
@@ -338,6 +343,8 @@ textarea {
             margin: 0 25px 0 0;
             font-weight: bold;
             font-style: italic; }
+            .main .about .about_content .about_container .about_info .about_content_menu .about_menu .about_social .about_social_list .about_social_elem a {
+              color: #313030; }
       .main .about .about_content .about_container .about_info .about_images .about_image_block {
         width: 23.5%;
         height: 184px;

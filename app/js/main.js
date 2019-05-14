@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    $('.about_images .about_image_block').click(function () {
+        let tab_id = $(this).attr('data-panel');
+
+        $('.about_container .about_container_image').removeClass('active');
+        $('.about_content_menu .about_menu').removeClass('active');
+
+        $('.'+tab_id).addClass('active');
+    });
+
     $('div.product_selector_panel div.panel').click(function () {
         let tab_id = $(this).attr('data-tab');
 
@@ -29,13 +38,21 @@ $(document).ready(function() {
     return false;
   });
 
-  $(".order").on("click", function(e){
-    let anchor = $("#presentation");
-    $('html, body').stop().animate({
-      scrollTop: $(anchor).offset().top
-    }, 777);
-    e.preventDefault();
-    return false;
-  });
+    function scrollBottom(elem){
+        $('html, body').stop().animate({
+            scrollTop: $(elem).offset().top
+        }, 777);
+    }
+
+
+    $(".contact_btn").on("click", function(){
+        let anchor = $(".footer");
+        scrollBottom(anchor);
+    });
+
+    $(".learn_btn").on("click", function(){
+        let anchor = $(".portfolio");
+        scrollBottom(anchor);
+    });
 
 });
